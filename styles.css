@@ -18,9 +18,9 @@ html {
 
 /* Variables */
 :root {
-    --primary-color: #2D5A27;
-    --secondary-color: #D4AF37;
-    --accent-color: #1E3A8A;
+    --primary-color: #EEB725;
+    --secondary-color: #000000;
+    --accent-color: #333333;
     --text-color: #333;
     --light-bg: #F8F9FA;
     --white: #FFFFFF;
@@ -52,7 +52,7 @@ html {
 .section-header h2 {
     font-size: 2.5rem;
     font-weight: 700;
-    color: var(--primary-color);
+    color: var(--secondary-color);
     margin-bottom: 16px;
 }
 
@@ -83,19 +83,19 @@ html {
 }
 
 .btn-primary:hover {
-    background-color: #1e3f1a;
+    background-color: #d4a520;
     transform: translateY(-2px);
     box-shadow: var(--shadow-lg);
 }
 
 .btn-secondary {
     background-color: transparent;
-    color: var(--white);
+    color: var(--primary-color);
     border: 2px solid var(--primary-color);
 }
 
 .btn-secondary:hover {
-    background-color: var(--primary-color);
+    background-color: var(--secondary-color);
     color: var(--white);
     transform: translateY(-2px);
 }
@@ -124,7 +124,7 @@ html {
 .logo-text {
     font-size: 1.5rem;
     font-weight: 700;
-    color: var(--primary-color);
+    color: var(--secondary-color);
 }
 
 .nav-menu {
@@ -176,7 +176,7 @@ html {
 
 /* Hero Section */
 .hero {
-    background: linear-gradient(135deg, var(--primary-color) 0%, var(--accent-color) 100%);
+    background: linear-gradient(135deg, var(--secondary-color) 0%, var(--accent-color) 100%);
     color: var(--white);
     padding: 120px 0 80px;
     min-height: 100vh;
@@ -205,7 +205,7 @@ html {
 .hero-subtitle {
     font-size: 1.5rem;
     margin-bottom: 24px;
-    color: var(--secondary-color);
+    color: var(--primary-color);
 }
 
 .hero-description {
@@ -236,7 +236,7 @@ html {
 .stat-number {
     font-size: 3rem;
     font-weight: 700;
-    color: var(--secondary-color);
+    color: var(--primary-color);
     margin-bottom: 8px;
 }
 
@@ -279,7 +279,7 @@ html {
 .about-card h3 {
     font-size: 1.5rem;
     font-weight: 600;
-    color: var(--primary-color);
+    color: var(--secondary-color);
     margin-bottom: 16px;
 }
 
@@ -307,7 +307,7 @@ html {
     transform: translateX(-50%);
     width: 3px;
     height: 100%;
-    background-color: var(--primary-color);
+    background-color: var(--secondary-color);
 }
 
 .timeline-item {
@@ -326,11 +326,11 @@ html {
     position: absolute;
     left: 50%;
     transform: translateX(-50%);
-    width: 16px;
-    height: 16px;
-    background-color: var(--secondary-color);
+    width: 10px;
+    height: 10px;
+    background-color: var(--primary-color);
     border-radius: 50%;
-    border: 3px solid var(--white);
+    border: 1px solid var(--white);
     box-shadow: var(--shadow);
     z-index: 2;
 }
@@ -339,7 +339,7 @@ html {
     flex: 1;
     text-align: center;
     font-weight: 600;
-    color: var(--primary-color);
+    color: var(--secondary-color);
     font-size: 1.1rem;
 }
 
@@ -353,13 +353,14 @@ html {
 }
 
 .timeline-content h3 {
-    color: var(--primary-color);
+    color: var(--secondary-color);
     margin-bottom: 8px;
     font-size: 1.3rem;
 }
 
 .timeline-content p {
     color: var(--gray-600);
+    margin-left: 8px;
 }
 
 /* Participation Section */
@@ -392,7 +393,7 @@ html {
 .step-number {
     width: 64px;
     height: 64px;
-    background-color: var(--primary-color);
+    background-color: var(--secondary-color);
     color: var(--white);
     border-radius: 50%;
     display: flex;
@@ -404,7 +405,7 @@ html {
 }
 
 .participation-step h3 {
-    color: var(--primary-color);
+    color: var(--secondary-color);
     margin-bottom: 16px;
     font-size: 1.3rem;
 }
@@ -444,7 +445,7 @@ html {
 }
 
 .guideline-card h3 {
-    color: var(--primary-color);
+    color: var(--secondary-color);
     margin-bottom: 16px;
     font-size: 1.3rem;
 }
@@ -496,7 +497,7 @@ html {
 
 .country-card h3,
 .language-card h3 {
-    color: var(--primary-color);
+    color: var(--secondary-color);
     margin-bottom: 24px;
     font-size: 1.3rem;
     text-align: center;
@@ -512,7 +513,7 @@ html {
 
 .country-tag,
 .language-tag {
-    background-color: var(--primary-color);
+    background-color: var(--secondary-color);
     color: var(--white);
     padding: 8px 16px;
     border-radius: 20px;
@@ -522,7 +523,7 @@ html {
 }
 
 .language-tag {
-    background-color: var(--accent-color);
+    background-color: var(--primary-color);
 }
 
 .country-tag:hover,
@@ -554,8 +555,8 @@ html {
 }
 
 .prize-card.featured {
-    background: linear-gradient(135deg, var(--secondary-color), #e8c547);
-    color: var(--white);
+    background: linear-gradient(135deg, var(--primary-color), #f5c842);
+    color: var(--secondary-color);
     transform: scale(1.05);
 }
 
@@ -580,33 +581,33 @@ html {
 .prize-position {
     font-size: 2rem;
     font-weight: 700;
-    color: var(--primary-color);
+    color: var(--secondary-color);
     margin-bottom: 16px;
 }
 
 .prize-card.featured .prize-position {
-    color: var(--white);
+    color: var(--secondary-color);
 }
 
 .prize-card h3 {
-    color: var(--primary-color);
+    color: var(--secondary-color);
     margin-bottom: 16px;
     font-size: 1.3rem;
 }
 
 .prize-card.featured h3 {
-    color: var(--white);
+    color: var(--secondary-color);
 }
 
 .prize-amount {
     font-size: 1.5rem;
     font-weight: 700;
-    color: var(--secondary-color);
+    color: var(--primary-color);
     margin-bottom: 16px;
 }
 
 .prize-card.featured .prize-amount {
-    color: var(--white);
+    color: var(--secondary-color);
 }
 
 .prize-card p {
@@ -614,7 +615,7 @@ html {
 }
 
 .prize-card.featured p {
-    color: rgba(255, 255, 255, 0.9);
+    color: rgba(0, 0, 0, 0.8);
 }
 
 /* Contact Section */
@@ -631,7 +632,7 @@ html {
 
 .contact-info h3,
 .contact-form h3 {
-    color: var(--primary-color);
+    color: var(--secondary-color);
     margin-bottom: 24px;
     font-size: 1.5rem;
 }
@@ -645,17 +646,17 @@ html {
 }
 
 .contact-item strong {
-    color: var(--primary-color);
+    color: var(--secondary-color);
 }
 
 .contact-item a {
-    color: var(--accent-color);
+    color: var(--primary-color);
     text-decoration: none;
     transition: var(--transition);
 }
 
 .contact-item a:hover {
-    color: var(--primary-color);
+    color: var(--secondary-color);
 }
 
 .social-links {
@@ -663,7 +664,7 @@ html {
 }
 
 .social-links h4 {
-    color: var(--primary-color);
+    color: var(--secondary-color);
     margin-bottom: 16px;
 }
 
@@ -676,7 +677,7 @@ html {
 .social-icon {
     display: inline-block;
     padding: 8px 16px;
-    background-color: var(--primary-color);
+    background-color: var(--secondary-color);
     color: var(--white);
     border-radius: var(--border-radius);
     text-decoration: none;
@@ -684,7 +685,8 @@ html {
 }
 
 .social-icon:hover {
-    background-color: var(--accent-color);
+    background-color: var(--primary-color);
+    color: var(--secondary-color);
     transform: translateY(-2px);
 }
 
@@ -719,8 +721,8 @@ html {
 .form-group input:focus,
 .form-group textarea:focus {
     outline: none;
-    border-color: var(--primary-color);
-    box-shadow: 0 0 0 3px rgba(45, 90, 39, 0.1);
+    border-color: var(--secondary-color);
+    box-shadow: 0 0 0 3px rgba(0, 0, 0, 0.1);
 }
 
 .form-group textarea {
@@ -744,7 +746,7 @@ html {
 
 .footer-section h3,
 .footer-section h4 {
-    color: var(--secondary-color);
+    color: var(--primary-color);
     margin-bottom: 16px;
 }
 
@@ -761,16 +763,14 @@ html {
     margin-bottom: 8px;
 }
 
-.footer-section a,
-.footer-bottom a {
+.footer-section a {
     color: var(--gray-300);
     text-decoration: none;
     transition: var(--transition);
 }
 
-.footer-section a:hover,
-.footer-bottom a:hover {
-    color: var(--secondary-color);
+.footer-section a:hover {
+    color: var(--primary-color);
 }
 
 .footer-bottom {
@@ -948,15 +948,15 @@ html {
 
 /* Focus styles for accessibility */
 *:focus {
-    outline: 2px solid var(--primary-color);
+    outline: 2px solid var(--secondary-color);
     outline-offset: 2px;
 }
 
 /* High contrast mode support */
 @media (prefers-contrast: high) {
     :root {
-        --primary-color: #000;
-        --secondary-color: #FFD700;
+        --primary-color: #FFD700;
+        --secondary-color: #000;
         --accent-color: #0000FF;
         --text-color: #000;
     }
