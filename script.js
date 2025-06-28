@@ -174,6 +174,21 @@ function animateCounters() {
 // Initialize counter animation
 document.addEventListener('DOMContentLoaded', animateCounters);
 
+// Hero slideshow functionality
+document.addEventListener('DOMContentLoaded', function() {
+    const slides = document.querySelectorAll('.hero-slide');
+    let currentSlide = 0;
+    
+    function nextSlide() {
+        slides[currentSlide].classList.remove('active');
+        currentSlide = (currentSlide + 1) % slides.length;
+        slides[currentSlide].classList.add('active');
+    }
+    
+    // Change slide every 5 seconds
+    setInterval(nextSlide, 5000);
+});
+
 // Add click-to-copy functionality for email addresses
 document.querySelectorAll('a[href^="mailto:"]').forEach(emailLink => {
     emailLink.addEventListener('click', function (e) {
