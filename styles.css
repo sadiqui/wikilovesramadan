@@ -86,7 +86,7 @@ html {
 .btn-primary:hover {
     background-color: #d4a520;
     transform: translateY(-2px);
-    box-shadow: var(--shadow-lg);
+    box-shadow: var(--shadow-gold);
 }
 
 .btn-secondary {
@@ -322,14 +322,14 @@ html {
     background-color: var(--white);
     padding: 32px;
     border-radius: var(--border-radius);
-    box-shadow: var(--shadow);
+    box-shadow: var(--shadow-gold);
     text-align: center;
     transition: var(--transition);
 }
 
 .about-card:hover {
     transform: translateY(-8px);
-    box-shadow: var(--shadow-lg);
+    box-shadow: var(--shadow-gold);
 }
 
 .card-icon {
@@ -388,7 +388,7 @@ html {
     background-color: var(--primary-color);
     border-radius: 50%;
     border: 1px solid var(--white);
-    box-shadow: var(--shadow);
+    box-shadow: var(--shadow-gold);
     z-index: 2;
 }
 
@@ -405,7 +405,7 @@ html {
     background-color: var(--light-bg);
     padding: 24px;
     border-radius: var(--border-radius);
-    box-shadow: var(--shadow);
+    box-shadow: var(--shadow-gold);
     margin: 0 24px;
 }
 
@@ -437,14 +437,14 @@ html {
     background-color: var(--white);
     padding: 32px;
     border-radius: var(--border-radius);
-    box-shadow: var(--shadow);
+    box-shadow: var(--shadow-gold);
     text-align: center;
     transition: var(--transition);
 }
 
 .participation-step:hover {
     transform: translateY(-8px);
-    box-shadow: var(--shadow-lg);
+    box-shadow: var(--shadow-gold);
 }
 
 .step-number {
@@ -492,13 +492,13 @@ html {
     background-color: var(--light-bg);
     padding: 32px;
     border-radius: var(--border-radius);
-    box-shadow: var(--shadow);
+    box-shadow: var(--shadow-gold);
     transition: var(--transition);
 }
 
 .guideline-card:hover {
     transform: translateY(-4px);
-    box-shadow: var(--shadow-lg);
+    box-shadow: var(--shadow-gold);
 }
 
 .guideline-card h3 {
@@ -549,7 +549,7 @@ html {
     background-color: var(--white);
     padding: 32px;
     border-radius: var(--border-radius);
-    box-shadow: var(--shadow);
+    box-shadow: var(--shadow-gold);
 }
 
 .country-card h3,
@@ -586,7 +586,7 @@ html {
 .country-tag:hover,
 .language-tag:hover {
     transform: translateY(-2px);
-    box-shadow: var(--shadow);
+    box-shadow: var(--shadow-gold);
 }
 
 /* Prizes Section */
@@ -605,7 +605,7 @@ html {
     background-color: var(--light-bg);
     padding: 32px;
     border-radius: var(--border-radius);
-    box-shadow: var(--shadow);
+    box-shadow: var(--shadow-gold);
     text-align: center;
     transition: var(--transition);
     position: relative;
@@ -628,7 +628,7 @@ html {
 
 .prize-card:hover {
     transform: translateY(-8px);
-    box-shadow: var(--shadow-lg);
+    box-shadow: var(--shadow-gold);
 }
 
 .prize-card.featured:hover {
@@ -703,7 +703,7 @@ html {
     padding: 16px;
     background-color: var(--white);
     border-radius: var(--border-radius);
-    box-shadow: var(--shadow);
+    box-shadow: var(--shadow-gold);
 }
 
 .contact-item strong {
@@ -755,7 +755,7 @@ html {
     background-color: var(--white);
     padding: 32px;
     border-radius: var(--border-radius);
-    box-shadow: var(--shadow);
+    box-shadow: var(--shadow-gold);
 }
 
 .form-group {
@@ -858,7 +858,7 @@ html {
         width: 100%;
         text-align: center;
         transition: 0.3s;
-        box-shadow: var(--shadow);
+        box-shadow: var(--shadow-gold);
         padding: 32px 0;
     }
 
