@@ -175,16 +175,16 @@ function animateCounters() {
 document.addEventListener('DOMContentLoaded', animateCounters);
 
 // Hero slideshow functionality
-document.addEventListener('DOMContentLoaded', function() {
+document.addEventListener('DOMContentLoaded', function () {
     const slides = document.querySelectorAll('.hero-slide');
     let currentSlide = 0;
-    
+
     function nextSlide() {
         slides[currentSlide].classList.remove('active');
         currentSlide = (currentSlide + 1) % slides.length;
         slides[currentSlide].classList.add('active');
     }
-    
+
     // Change slide every 5 seconds
     setInterval(nextSlide, 5000);
 });
@@ -303,7 +303,7 @@ if (window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
     document.documentElement.style.setProperty('--transition', 'none');
 }
 
-// Service Worker registration for offline support (optional)
+// Service Worker registration for offline support (beta)
 if ('serviceWorker' in navigator) {
     window.addEventListener('load', function () {
         navigator.serviceWorker.register('/sw.js').then(function (registration) {
@@ -313,3 +313,17 @@ if ('serviceWorker' in navigator) {
         });
     });
 }
+
+// Scroll to the top
+document.body.addEventListener("click", (event) => {
+    if (event.target.closest(".back-to-top")) {
+        window.scrollTo({ top: 0, behavior: "smooth" });
+    }
+});
+window.addEventListener("scroll", function () {
+    if (window.scrollY > 2200) {
+        document.querySelector(".back-to-top")?.classList.remove("hidden");
+    } else {
+        document.querySelector(".back-to-top")?.classList.add("hidden");
+    }
+});

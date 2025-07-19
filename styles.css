@@ -38,6 +38,12 @@ html {
     --transition: all 0.3s ease;
 }
 
+/* Utility class to hide and show elements */
+.hidden {
+    visibility: hidden;
+    opacity: 0;
+}
+
 /* Utility Classes */
 .container {
     max-width: 1200px;
@@ -99,6 +105,28 @@ html {
     background-color: var(--primary-color);
     color: var(--white);
     transform: translateY(-2px);
+}
+
+.back-to-top {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background-color: var(--primary-color);
+    color: var(--white);
+    border: none;
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    font-size: 24px;
+    cursor: pointer;
+    box-shadow: var(--shadow-gold);
+    transition: transform 0.3s ease, background-color 0.3s ease;
+    transition: opacity 0.8s ease, visibility 0.8s ease;
+}
+
+.back-to-top:hover {
+    background-color: var(--secondary-color);
+    transform: scale(1.1);
 }
 
 /* Navigation */
@@ -824,13 +852,19 @@ html {
     margin-bottom: 8px;
 }
 
-.footer-section a {
+.footer-section a,
+.hero-description a {
     color: var(--gray-300);
     text-decoration: none;
     transition: var(--transition);
 }
 
-.footer-section a:hover {
+.hero-description a {
+    color: var(--white);
+}
+
+.footer-section a:hover,
+.hero-description a:hover {
     color: var(--primary-color);
 }
 
@@ -981,6 +1015,12 @@ html {
     .prizes-grid {
         grid-template-columns: 1fr;
     }
+
+    .back-to-top {
+        width: 30px;
+        height: 30px;
+        font-size: 14px;
+    }
 }
 
 /* Animations */
@@ -994,6 +1034,20 @@ html {
         opacity: 1;
         transform: translateY(0);
     }
+}
+
+@keyframes rotateTransition {
+    0% {
+        transform: rotate(0deg) scale(1.1);
+    }
+
+    100% {
+        transform: rotate(360deg) scale(1.1);
+    }
+}
+
+.back-to-top:hover {
+    animation: rotateTransition 0.3s ease-in-out;
 }
 
 .hero-content {
