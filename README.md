@@ -11,5 +11,6 @@ Wiki Loves Ramadan</a></small>
 
 ### Collaborators
 
-- Site developed and maintained by [Abdelilah Sadiqui](https://github.com/sadiqui).
-- Early contributions by [Mohammed Kamal-Deen Fuseini](https://github.com/DNShitobu).
+- [Sadiqui](https://github.com/sadiqui).
+- [Abdelilah Jalal](https://github.com/bonnjalal).
+- [Mohammed Kamal-Deen Fuseini](https://github.com/DNShitobu).
