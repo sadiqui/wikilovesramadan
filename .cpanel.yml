@@ -1,0 +1,4 @@
+deployment:
+  tasks:
+    - export DEPLOYPATH=/home/wikikoml/public_html/
+    - /bin/rsync -av --delete index.html styles.css script.js $DEPLOYPATH
